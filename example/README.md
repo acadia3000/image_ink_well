@@ -1,16 +1,43 @@
 # image_ink_well_example
 
-Demonstrates how to use the image_ink_well plugin.
+![](../ImageInkWell.gif)
 
-## Getting Started
+```
+// rectangle image inkwell
+ImageInkWell(
+  onPressed: () {
+    print('onPressed');
+  },
+  width: 300,
+  height: 180,
+  image: NetworkImage(
+      'https://images.unsplash.com/photo-1547651196-4bd31258de69?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'),
+  splashColor: Color(0x32ff0000),
+)
 
-This project is a starting point for a Flutter application.
+// rounded rectangle image inkwell
+RoundedRectangleImageInkWell(
+  onPressed: () {
+    print('onPressed');
+  },
+  width: 300,
+  height: 150,
+  borderRadius: BorderRadius.only(
+      topLeft: const Radius.circular(20),
+      topRight: const Radius.circular(20),
+      bottomLeft: const Radius.circular(20)),
+  image: NetworkImage(
+      'https://images.unsplash.com/photo-1547332184-070705bccbd3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'),
+)
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+// circle image inkwell
+CircleImageInkWell(
+  onPressed: () {
+    print('onPressed');
+  },
+  size: 200,
+  image: NetworkImage(
+      'https://images.unsplash.com/photo-1547651619-238e04d07889?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'),
+  splashColor: Colors.white24,
+)
+```
