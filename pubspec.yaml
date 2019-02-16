@@ -1,8 +1,8 @@
 name: image_ink_well
 description: Image InkWell Flutter plugin.
-version: 0.0.1
+version: 0.0.2
 author: Thomas Jeong<acadia3000@gmail.com>
-homepage: https://toastyflutter.tistory.com/1?category=699148
+homepage: https://github.com/acadia3000/image_ink_well
 
 environment:
   sdk: ">=2.0.0-dev.68.0 <3.0.0"
