@@ -8,7 +8,7 @@ Image InkWell Flutter plugin.
 ### Dependency
 ```
 dependencies:
-  image_ink_well: ^0.0.2
+  image_ink_well: ^0.1.0
 ```
 
 ### Import
